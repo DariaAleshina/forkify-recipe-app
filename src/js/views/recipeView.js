@@ -1,6 +1,6 @@
 import View from './views_common.js';
 
-import icons from 'url:../../img/icons.svg';
+import icons from '/src/img/icons.svg';
 // prev Fractional - to be reistalled with npm
 // import { Fraction } from 'fractional';
 

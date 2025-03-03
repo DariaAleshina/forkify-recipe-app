@@ -1,8 +1,8 @@
 import View from './views_common.js';
 
 import icons from 'url:../../img/icons.svg';
+// @ts-ignore
 import { Fraction } from 'fractional';
-
 
 class RecipeView extends View {
   parentElement = document.querySelector('.recipe');

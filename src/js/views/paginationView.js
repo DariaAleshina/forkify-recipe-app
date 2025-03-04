@@ -43,14 +43,10 @@ class PaginationView extends View {
             return `
                 <button data-goto="${this.data.page + 1}" class="btn--inline pagination__btn--next">
                     <span>Page ${this.data.page + 1}</span>
-                    <svg class="search__icon">
-                        <use href="${icons}#icon-arrow-right"></use>
-                    </svg>
+                    <i class="bi bi-arrow-right-short"></i>
                 </button>
                 <button data-goto="${this.data.page - 1}" class="btn--inline pagination__btn--prev">
-                    <svg class="search__icon">
-                        <use href="${icons}#icon-arrow-left"></use>
-                    </svg>
+                    <i class="bi bi-arrow-left-short"></i>
                     <span>Page ${this.data.page - 1}</span>
                 </button>
             `;

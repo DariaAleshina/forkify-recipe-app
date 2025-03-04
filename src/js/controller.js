@@ -10,6 +10,8 @@ import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarkView.js';
 import addRecipeView from './views/addRecipeView.js';
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 ///////////////////////////////////////
 
 if (module.hot) {

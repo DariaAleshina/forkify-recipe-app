@@ -75,6 +75,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    gap: 0.7rem;
 
     &:not(:last-child) {
       margin-right: 4.5rem;
@@ -111,6 +112,7 @@
 
     margin-left: auto;
     margin-right: 1.75rem;
+    color: $color-primary;
 
     svg {
       height: 2.25rem;

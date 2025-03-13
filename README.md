@@ -9,6 +9,7 @@ The HTML and CSS design were provided by Jonas Schmedtmann as part of the course
 The App is deployed on Netlify:
 [CHECK OUT THE PROJECT](https://forkify-recipe-app-daria-aleshina.netlify.app/)
 
+
 ⚠️ Mobile Responsiveness: This project is best viewed on desktop. Mobile support is in progress!
 
 ## Features

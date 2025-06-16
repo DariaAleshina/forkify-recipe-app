@@ -70,7 +70,7 @@ $bp-500: 31.25em;
     border-radius: 0;
     padding: 1.5rem 4rem;
     background-color: #fff;
-    z-index: 999;
+    // z-index: 999;
     height: 9rem;
 
     &__field {
@@ -195,5 +195,9 @@ $bp-500: 31.25em;
   .nav__btn--bookmarks:hover + & {
     visibility: visible;
     opacity: 1;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    width: 100vw;
   }
 }

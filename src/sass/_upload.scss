@@ -1,3 +1,6 @@
+$bp-800: 50em;
+$bp-500: 31.25em;
+
 .add-recipe-window {
   position: fixed;
   top: 50%;
@@ -22,6 +25,13 @@
     cursor: pointer;
     border: none;
     background: none;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+    padding: 5rem 3rem;
   }
 }
 
@@ -95,5 +105,22 @@
   &__btn {
     grid-column: 1 / -1;
     justify-self: center;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    grid-template-columns: 1fr;
+
+    &__column {
+      row-gap: 1.5rem;
+      column-gap: 1rem;
+
+      label {
+        font-size: 1.4rem;
+      }
+
+      input {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

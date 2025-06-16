@@ -181,5 +181,11 @@
 
   @media only screen and (max-width: $bp-800) {
     margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+
+    &__fig {
+      height: 24rem;
+    }
   }
 }

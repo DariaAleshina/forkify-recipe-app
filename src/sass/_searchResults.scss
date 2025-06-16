@@ -6,6 +6,10 @@
   @media only screen and (max-width: $bp-800) {
     margin-top: 9rem;
   }
+
+  @media only screen and (max-width: $bp-500) {
+    // display: none;
+  }
 }
 
 .results {
@@ -42,5 +46,9 @@
   .twitter-link:link,
   .twitter-link:visited {
     color: $color-grey-dark-2;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    // display: none;
   }
 }

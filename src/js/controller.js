@@ -26,12 +26,19 @@ const controlRecipes = async function () {
     // fetch data
     recipeView.renderSpinner();
 
+    // hide search result bar on mobile
+    searchResultsView.hideOnMobile();
+
+    // hide bookmark window
+    bookmarksView.hide();
+
 
     // load recipe data
     await model.loadRecipe(id);
 
     // render the data
     recipeView.render(model.state.recipe)
+
 
     // update results view with marked chosen recipe
     searchResultsView.update(model.getSearchResultsPage());
@@ -49,14 +56,23 @@ const controlSearch = async function () {
   try {
     searchResultsView.renderSpinner();
 
+    // open on mobile
+    searchResultsView.showOnMobile();
+
+    // close bookmark window
+    bookmarksView.hide();
+
     const query = searchFormView.getQuery();
     if (!query) return;
 
     await model.loadSearchResults(query);
 
     searchResultsView.render(model.getSearchResultsPage());
-    paginationView.render(model.state.search)
     // render pagination
+    paginationView.render(model.state.search);
+
+
+
 
   } catch (err) {
     console.log(`💥 ${err} 💥`);

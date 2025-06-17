@@ -10,6 +10,10 @@
     height: 4.6rem;
     display: block;
   }
+
+  @media only screen and (max-width: $bp-800) {
+    position: relative;
+  }
 }
 
 .search {
@@ -53,6 +57,39 @@
   &__btn {
     font-weight: 600;
     font-family: inherit;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    position: absolute;
+    top: 100%; // below the header
+    left: 0;
+    width: 100vw;
+    border-radius: 0;
+    padding: 1.5rem 4rem;
+    background-color: #fff;
+    // z-index: 999;
+    height: 9rem;
+
+    &__field {
+      width: 90%;
+
+      &::placeholder {
+        color: $color-grey-dark-2;
+      }
+    }
+
+    &__btn {
+      padding: 1.5rem;
+      span {
+        display: none;
+      }
+
+      i {
+        margin-right: 0 !important;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
   }
 }
 
@@ -102,6 +139,21 @@
       background-color: $color-grey-light-2;
     }
   }
+
+  @media only screen and (max-width: $bp-500) {
+    &__btn {
+      padding: 0 2rem;
+      span {
+        display: none;
+      }
+
+      svg {
+        margin-right: 0 !important;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
 }
 
 .bookmarks {
@@ -114,8 +166,10 @@
   background-color: #fff;
   box-shadow: 0 0.8rem 5rem 2rem rgba($color-grey-dark-1, 0.1);
 
-  visibility: hidden;
-  opacity: 0;
+  // visibility: hidden;
+  // opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: all 0.5s 0.2s;
 
   &__list {
@@ -136,9 +190,13 @@
     }
   }
 
-  &:hover,
-  .nav__btn--bookmarks:hover + & {
-    visibility: visible;
-    opacity: 1;
+  // &:hover,
+  // .nav__btn--bookmarks:hover + & {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
+
+  @media only screen and (max-width: $bp-500) {
+    width: 100vw;
   }
 }

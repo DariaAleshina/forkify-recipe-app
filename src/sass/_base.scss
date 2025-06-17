@@ -16,6 +16,9 @@ $bp-medium: 61.25em; // 980px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
+$bp-800: 50em;
+$bp-500: 31.25em;
+
 * {
   margin: 0;
   padding: 0;
@@ -67,5 +70,14 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template:
+      'head' 10rem
+      'recipe' auto
+      'list' auto / 1fr;
+
+    position: relative;
   }
 }

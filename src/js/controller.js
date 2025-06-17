@@ -26,6 +26,9 @@ const controlRecipes = async function () {
     // fetch data
     recipeView.renderSpinner();
 
+    // hide search result bar on mobile
+    searchResultsView.hideOnMobile();
+
     // hide bookmark window
     bookmarksView.hide();
 
@@ -52,6 +55,10 @@ const controlRecipes = async function () {
 const controlSearch = async function () {
   try {
     searchResultsView.renderSpinner();
+
+    // open on mobile
+    searchResultsView.showOnMobile();
+
     // close bookmark window
     bookmarksView.hide();
 
@@ -63,6 +70,7 @@ const controlSearch = async function () {
     searchResultsView.render(model.getSearchResultsPage());
     // render pagination
     paginationView.render(model.state.search);
+
 
 
 

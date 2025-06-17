@@ -10,9 +10,12 @@
   @media only screen and (max-width: $bp-small) {
     position: absolute;
     z-index: 9;
-    background-color: $color-grey-light-1;
+    background-color: #fff;
     max-width: 40rem;
     margin-top: 19rem;
+
+    overflow-y: scroll;
+    height: 100vw;
   }
 }
 
@@ -54,5 +57,27 @@
 
   @media only screen and (max-width: $bp-500) {
     display: none;
+  }
+}
+
+.search-button-bar {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.btn--close-search {
+  display: none;
+
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+    font-size: 3rem;
+    color: $color-primary;
+    border: none;
+    background-color: #fff;
+    align-self: flex-end;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
   }
 }

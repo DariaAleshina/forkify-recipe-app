@@ -68,7 +68,6 @@
     border-radius: 0;
     padding: 1.5rem 4rem;
     background-color: #fff;
-    // z-index: 999;
     height: 9rem;
 
     &__field {
@@ -125,11 +124,8 @@
     align-items: center;
 
     svg {
-      // height: 2.4rem;
-      // width: 2.4rem;
       fill: $color-primary;
       margin-right: 0.7rem;
-      // transform: translateY(-1px);
     }
 
     &:focus {
@@ -160,15 +156,12 @@
 .bookmarks {
   padding: 1rem 0;
   position: absolute;
-  // right: 0;
   right: -2.5rem;
   z-index: 10;
   width: 40rem;
   background-color: #fff;
   box-shadow: 0 0.8rem 5rem 2rem rgba($color-grey-dark-1, 0.1);
 
-  // visibility: hidden;
-  // opacity: 0;
   visibility: visible;
   opacity: 1;
   transition: all 0.5s 0.2s;
@@ -190,12 +183,6 @@
       background-color: $color-grey-light-2;
     }
   }
-
-  // &:hover,
-  // .nav__btn--bookmarks:hover + & {
-  //   visibility: visible;
-  //   opacity: 1;
-  // }
 
   @media only screen and (max-width: $bp-500) {
     width: 100vw;

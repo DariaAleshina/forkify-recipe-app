@@ -166,8 +166,10 @@
   background-color: #fff;
   box-shadow: 0 0.8rem 5rem 2rem rgba($color-grey-dark-1, 0.1);
 
-  visibility: hidden;
-  opacity: 0;
+  // visibility: hidden;
+  // opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: all 0.5s 0.2s;
 
   &__list {
@@ -188,11 +190,11 @@
     }
   }
 
-  &:hover,
-  .nav__btn--bookmarks:hover + & {
-    visibility: visible;
-    opacity: 1;
-  }
+  // &:hover,
+  // .nav__btn--bookmarks:hover + & {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
 
   @media only screen and (max-width: $bp-500) {
     width: 100vw;

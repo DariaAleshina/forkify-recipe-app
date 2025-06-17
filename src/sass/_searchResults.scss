@@ -7,8 +7,12 @@
     margin-top: 9rem;
   }
 
-  @media only screen and (max-width: $bp-500) {
-    // display: none;
+  @media only screen and (max-width: $bp-small) {
+    position: absolute;
+    z-index: 9;
+    background-color: $color-grey-light-1;
+    max-width: 40rem;
+    margin-top: 19rem;
   }
 }
 

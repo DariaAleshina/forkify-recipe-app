@@ -16,6 +16,8 @@
 
     overflow-y: scroll;
     height: 100vw;
+    border-top: 1px solid $color-grey-light-2;
+    box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.08);
   }
 }
 

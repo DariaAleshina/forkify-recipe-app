@@ -75,8 +75,7 @@ body {
   @media only screen and (max-width: $bp-small) {
     grid-template:
       'head' 10rem
-      'recipe' auto
-      'list' auto / 1fr;
+      'recipe' auto / 1fr;
 
     position: relative;
   }

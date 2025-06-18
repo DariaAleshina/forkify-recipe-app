@@ -2,7 +2,7 @@
 
 ## Description
 
-Forkify is a vanilla JavaScript application that allows users to search for recipes and upload their own custom recipes.
+Forkify is a vanilla JavaScript application built using the MVC architecture, allowing users to search for recipes and upload their own custom ones.
 
 The App is deployed on Netlify:
 [CHECK OUT THE PROJECT](https://forkify-recipe-app-daria-aleshina.netlify.app/)
@@ -20,6 +20,7 @@ The App is deployed on Netlify:
 
 - JavaScript (ES6+)
 - Sass (SCSS)
+- MVC architecture
 - Parcel v2 for bundling
 - Third-party [API](https://forkify-api.herokuapp.com/v2) for fetching recipe data
 

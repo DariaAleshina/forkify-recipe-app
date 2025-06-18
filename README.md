@@ -20,7 +20,7 @@ The App is deployed on Netlify:
 
 - JavaScript (ES6+)
 - Sass (SCSS)
-- Webpack for bundling
+- Parcel v2 for bundling
 - Third-party [API](https://forkify-api.herokuapp.com/v2) for fetching recipe data
 
 ## How to Use

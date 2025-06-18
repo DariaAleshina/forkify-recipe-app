@@ -2,9 +2,7 @@
 
 ## Description
 
-Forkify is a vanilla JavaScript application that allows users to search for recipes and upload their own custom recipes. This project was developed as part of _"The Complete JavaScript Course 2025: From Zero to Expert!"_ by Jonas Schmedtmann.
-
-The HTML and CSS design were provided by Jonas Schmedtmann as part of the course. Modified by me, to make design responsive.
+Forkify is a vanilla JavaScript application that allows users to search for recipes and upload their own custom recipes.
 
 The App is deployed on Netlify:
 [CHECK OUT THE PROJECT](https://forkify-recipe-app-daria-aleshina.netlify.app/)
@@ -18,11 +16,12 @@ The App is deployed on Netlify:
 - Bookmark favorite recipes for easy access
 - Responsive design
 
-## Technologies Used
+## Tech
 
 - JavaScript (ES6+)
+- Sass (SCSS)
 - Webpack for bundling
-- Third-party API for fetching recipe data
+- Third-party [API](https://forkify-api.herokuapp.com/v2) for fetching recipe data
 
 ## How to Use
 
@@ -32,4 +31,4 @@ The App is deployed on Netlify:
 
 ## Credits
 
-This project was executed as part of _"The Complete JavaScript Course 2025: From Zero to Expert!"_ by Jonas Schmedtmann. HTML and CSS design were provided by Jonas Schmedtmann.
+This project was executed as part of _"The Complete JavaScript Course 2025: From Zero to Expert!"_ by Jonas Schmedtmann. The HTML and CSS design were provided by Jonas Schmedtmann as part of the course. Modified by me, to make design responsive.
